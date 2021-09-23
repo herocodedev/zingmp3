@@ -1,0 +1,182 @@
+<div class="app">
+    <div class="category">
+            <div class="logo">
+                <img src="https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg" alt="">
+            </div>
+            <div class="component">
+                <div class="component-1" style="border-bottom: 1px solid #393243;">
+                    <ul>
+                        <li class="active"><a href=""><i style="font-weight: 100;" class="fas fa-user"></i><span style="font-weight: bolder;">Cá Nhân</span></a></li>
+                        <li><a href="/explore"><i style="font-weight: 100;" class="far fa-dot-circle"></i><span style="font-weight: bolder;">Khám phá</span></a></li>
+                        <li><a href="/zingchart"><i style="font-weight: 100;" class="far fa-comment-dots"></i><span style="font-weight: bolder;">#Zingchart</span></a></li>
+                        <li style="position: relative;"><a href=""><i style="font-weight: 1000;" class="fas fa-broadcast-tower"></i><span style="font-weight: bolder;">Radio & Podcast</span><span class="live">live</span></a></li>
+                        <li><a href=""><i style="font-weight: 100;" class="far fa-newspaper"></i><span style="font-weight: bolder;">Theo dõi</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="component-2">
+                    <ul>
+                         <li><a href=""><i style="font-weight: 100;" class="far fa-list-alt"></i><span style="font-weight: bolder;">Thể Loại</span></a></li>
+                        <li><a href=""><i style="font-weight: 1000;" class="fas fa-stopwatch-20"></i><span style="font-weight: bolder;">Top 100</span></a></li>
+                        <li style="position: relative;"><a href=""><i style="font-weight: 1000;" class="fas fa-tv"></i><span style="font-weight: bolder;">MV</span><span class="live" style="background-color: rgba(255, 0, 0, 0.767);">live</span></a></li>
+                    </ul>
+
+                    <div class="bonus">
+                        <p>Nghe nhạc không quảng cáo cùng kho nhạc VIP</p>
+                        <a href="" class="btn btn-warning">Mua VIP</a>
+                    </div>
+
+                    <div class="lib">
+                        <span>THƯ VIỆN</span>
+                        <div class="item">
+                            <ul>
+                                <li><a href=""><i class="fas fa-parachute-box" style=" color:#0490FF;"></i><span style="font-weight: bolder;">Bài Hát</span></a></li>
+                                <li><a href=""><i class="fab fa-playstation" style="color: #8DC74E;"></i><span style="font-weight: bolder;">Playlist</span></a></li>
+                                <li><a href=""><i class="far fa-clock" style="color: #F8AF4B;"></i><span style="font-weight: bolder;">Gần đây</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="create-playlist">
+                <a href="" style="color: #fff;"><i class="fas fa-plus"></i>Tạo Playlist Mới</a>
+            </div>
+    </div>
+    
+    <div class="body"> 
+        <div class="header">
+            <div class="level-left">
+                <div class="icon">
+                    <i class="fas fa-arrow-left"></i>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <form action="" class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Nhập Tên bài hát,nghệ sĩ hoặc MV...">
+                </form>
+            </div>
+            <div class="lever-right" style="cursor: pointer;">
+                <div class="icon"><i class="icon-theme fab fa-cloudversify"></i></div>
+                <div class="icon"><i class="fas fa-cloud-download-alt"></i></div>
+                <div class="icon setting">
+                    <i class="fas fa-cog"></i>
+                    <div class="child dn">
+                        
+                        <button type="button" class="btn btn-danger" style="position: absolute;right: 0;top: 0;border-radius:12px;"><i class="fas fa-times"></i></button>
+                        <div class="content">
+                            <span class="off-light"><i class="far fa-lightbulb" style="margin-right: 12px;"></i>Tắt đèn</span>
+                            <span class="on-light"><i class="fas fa-lightbulb" style="margin-right: 12px;"></i>Bật đèn</span>
+                            <span class="default-light">Chế độ mặc định</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon user" style="position: relative;">
+                    <i class="far fa-user"></i>
+                    <div class="child dn">
+                        <a href="/logout"><i class="fas fa-sign-out-alt" style="margin-right: 12px;"></i>Đăng Xuất</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="body-items">
+            <div class="avatar">
+                <i class="fas fa-user"></i>
+                <h3>{{user.username}}</h3>
+            </div>
+            <div class="main-body">
+                <div class="main-category">
+                    <div class="wrap">
+                        <div class="item"><button class="active">TỔNG QUAN</button></div>
+                        <div class="item"><button>BÀI HÁT</button></div>
+                        <div class="item"><button>PLAYLIST</button></div>
+                        <div class="item"><button>ALBUM</button></div>
+                        <div class="item"><button>MV</button></div>
+                        <div class="item"><button>TẢI LÊN</button></div>
+                    </div>
+                </div>
+                <span class="playall"><i class="fas fa-play icon-play"></i>Phát Tất Cả</span><br />
+                <div class="main-component">
+                    <div class="img">
+                        <div class="level-top">
+                            <span style="font-size: 1.4rem;margin-bottom: 0;font-weight: 700;">Bài Hát</span>
+                        </div>
+                        <img class="img-level-top" src="https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/9/7/c/9/97c960ac271e94fa47c87a12aa7d3be5.jpg" alt=""> 
+                    </div>
+                    <div class="playlist" style="width: 100%;padding-left: 24px;padding-top: 20px;">
+                        <div class="loader"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Playlist <i class="fas fa-chevron-right"></i></p>
+            <div class="body-playlist" style="cursor: pointer;">
+                <div class="add">
+                    <span>Tạo playlist mới</span><br />
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="listen">
+                    <img src="/img/anhbonus.jpg" alt="">
+                    <div class="content" style="margin-left: 4px; padding: 4px;">
+                        <span style="color: #fff;">4U - On Repeat</span><br />
+                        <span style="color: #eee;">Zing mp3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bar-music">
+            <div class="component-1">
+                <img src="https://img.lovepik.com/photo/50042/1067.jpg_wh860.jpg" style="object-fit: cover;" alt="">
+                <div class="title">
+                    <span class="name" style="color: #FBFBFB;">Chờ Load Xíu Bạn Nhé</span><br>
+                    <span class="author" style="color:hsla(0,0%,100%,0.5);">Thành Thông</span>
+                </div>
+                <div class="icon">
+                    <i class="far fa-heart heart"></i>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+
+            <div class="component-2">
+                <div class="control" style="text-align: center;">
+                    <div class="btn btn-repeat">
+                        <i class="fas fa-redo"></i>
+                    </div>
+                    <div class="btn btn-prev">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="btn btn-toggle-play">
+                        <i class="fas fa-pause icon-pause"></i>
+                        <i class="fas fa-play icon-play"></i>
+                    </div>
+                    <div class="btn btn-next">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="btn btn-random">
+                        <i class="fas fa-random"></i>
+                    </div>
+                </div>
+                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            </div>
+
+            <div class="component-3">
+                <i class="fab fa-youtube"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <div class="volume" style="cursor: pointer;">
+                    <i class="fas fa-volume-up" id="volume_icon"></i>
+                    <input type="range" min="0" max="100" value="100" id="volume" class="progress">
+                </div>
+                <div class="list-music">
+                    <i class="fas fa-drum" style="color: hsla(0, 0%, 100%, 0.5);"></i>
+                </div>
+            </div>
+    </div>
+</div>
+<audio id="audio" src=""></audio>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js " integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script> 
+<script src="/js/main.js"></script> 
